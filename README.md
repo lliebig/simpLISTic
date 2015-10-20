@@ -17,6 +17,8 @@ A super simple task list for Android with reminders and Material Design GUI.
 * Multi-pane layout for tablets
 
 ### License
+This software is licensed under <a href="http://choosealicense.com/licenses/gpl-3.0/" target="_blank">GNU General Public License v3.0</a>.
+
 ```
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
