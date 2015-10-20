@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="de.leoliebig.wundertest" >
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:name="de.leoliebig.simpLISTic.Global"
+        >
+
+        <activity
+            android:name="de.leoliebig.simpLISTic.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="de.leoliebig.simpLISTic.EditTaskActivity" >
+        </activity>
+
+        <receiver
+            android:name="de.leoliebig.simpLISTic.controller.NotificationReceiver"
+            android:enabled="true"
+            android:exported="true" >
+        </receiver>
+
+        <receiver
+            android:name="de.leoliebig.simpLISTic.controller.BootReceiver"
+            android:enabled="true"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

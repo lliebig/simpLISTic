@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">simpLISTic</string>
+    <string name="action_delete_all">Delete all</string>
+    <string name="action_hide_done_tasks">Hide done tasks</string>
+    <string name="list_view_empty_text">Please add a task</string>
+
+    <string name="hint_task_notes">Add notes to your task</string>
+    <string name="hint_task_title">Title</string>
+    <string name="hint_task_due_date">Due date</string>
+    <string name="save">Save</string>
+    <string name="discard">Discard</string>
+    <string name="delete">Delete</string>
+    <string name="dialog_save_task">Save task?</string>
+    <string name="btn_okay">Okay</string>
+    <string name="btn_cancel">Cancel</string>
+
+    <string name="error_can_not_delete_task">Can not delete task</string>
+    <string name="task_title">Title</string>
+    <string name="task_title_reminder">Reminder</string>
+    <string name="task_title_notes">Notes</string>
+    <string name="action_undo">Undo</string>
+    <string name="snackbar_deleted_task">"Deleted "</string>
+    <string name="dialog_delete_all_tasks">Delete all tasks?</string>
+    <string name="toast_enter_title">Enter a title</string>
+    <string name="toast_reminder_date_in_past">Reminder date is in the past</string>
+    <string name="notification_reminder">Reminder, do not forget about me!</string>
+    <string name="toast_updated_task">"Updated task "</string>
+    <string name="toast_created_task">"Created task "</string>
+
+</resources>

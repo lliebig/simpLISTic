@@ -1,0 +1,95 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="de.leoliebig.simpLISTic.view.EditTaskFragment"
+    android:orientation="vertical"
+    android:padding="@dimen/padding_default"
+    >
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/task_title"
+        android:textColor="@color/colorPrimary"
+        android:paddingTop="@dimen/padding_default"
+        />
+
+    <EditText
+        android:id="@+id/edit_text_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:hint="@string/hint_task_title"
+        android:inputType="textCapWords"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/task_title_reminder"
+        android:textColor="@color/colorPrimary"
+        android:paddingTop="@dimen/padding_default"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        android:padding="0dp"
+        android:layout_margin="0dp"
+        >
+
+        <CheckBox
+            android:id="@+id/checkbox_reminder_enabled"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="Enable"
+            android:layout_weight="2"
+            />
+
+        <Button
+            android:id="@+id/btn_task_date"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            />
+
+        <Button
+            android:id="@+id/btn_task_time"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            />
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/task_title_notes"
+        android:textColor="@color/colorPrimary"
+        android:paddingTop="@dimen/padding_default"
+        />
+    <EditText
+        android:id="@+id/edit_text_notes"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:hint="@string/hint_task_notes"
+        android:gravity="top"
+        />
+
+
+</LinearLayout>
