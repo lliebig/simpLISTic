@@ -1,5 +1,5 @@
 # simpLISTic
-A super simple task list for Android with reminders and Material Design GUI.
+A super simple task list for Android with reminders and a Material Design GUI.
 
 ### Screenshots
 
